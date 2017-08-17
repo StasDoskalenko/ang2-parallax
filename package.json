@@ -1,6 +1,6 @@
 {
   "name": "ang2-parallax",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A parallax module built for Angular 2 components.",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/allenRoyston/ng2-parallax.git"
+    "url": "git+https://github.com/StasDoskalenko/ang2-parallax.git"
   },
   "keywords": [
     "angular2",
@@ -21,7 +21,7 @@
   "author": "allen royston",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/allenRoyston/ng2-parallax/issues"
+    "url": "https://github.com/StasDoskalenko/ang2-parallax/issues"
   },
-  "homepage": "https://github.com/allenRoyston/ng2-parallax#readme"
+  "homepage": "https://github.com/StasDoskalenko/ang2-parallax#readme"
 }

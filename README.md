@@ -49,7 +49,7 @@ export class componentName { }
 ```
 
 ### Version
-1.0.0
+1.0.2
 
 
 ### Live Demo 
