@@ -20,6 +20,8 @@ export class ng2parallax implements OnInit {
     var t = this,
         _img = t.src,
         _speed = t.speed;
+    let xPos = '0%';
+
 
     window.mobileAndTabletcheck = function() {
       var check = false;
@@ -42,15 +44,20 @@ export class ng2parallax implements OnInit {
 
         var scrollTop = (window.pageYOffset !== undefined) ? window.pageYOffset : window(document.documentElement || document.body.parentNode || document.body).scrollTop;
         var speed = (scrollTop / _speed );
+        const currentBackgroundPosition = bgObj.style.backgroundPosition;
+        if (currentBackgroundPosition !== 'initial') {
+            const backgroundPos = currentBackgroundPosition.split(' ');
+            xPos = backgroundPos[0];
+        }
 
         if(isMobile){
-          speed = speed * .10
+            speed = speed * .10
         }
         if(speed == 0){
-          bgObj.style.backgroundPosition = '0% '+ 0 + '%';
+            bgObj.style.backgroundPosition = xPos + ' ' + 0 + '%';
         }
         else{
-          bgObj.style.backgroundPosition = '0% '+ speed + '%';
+            bgObj.style.backgroundPosition = xPos + ' ' + speed + '%';
         }
 
 
