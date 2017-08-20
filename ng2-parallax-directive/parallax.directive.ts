@@ -24,7 +24,7 @@ export class ng2parallax implements OnInit {
         // let clientY = '0px';
         let clientY = 0;
 
-        const move = (event: any) => {
+        function move (event: any) {
             //clientX = event.clientX;
             // console.log('Plugin >>> ', event.screenY);
             // clientY = (event.screenY * -1 / 6) + 'px';
@@ -65,14 +65,13 @@ export class ng2parallax implements OnInit {
                 xPos = backgroundPos[0];
             }
             // console.log("Scroll speed >>> ", speed);
-            if(isMobile){
+            if (isMobile){
                 speed = speed * .10
             }
-            if(speed == 0){
-                bgObj.style.backgroundPosition = xPos + ' ' + speed + '%';
-            }
-            else{
-                bgObj.style.backgroundPosition = xPos + ' ' + speed + '%';
+            if (speed == 0) {
+                bgObj.style.backgroundPosition = xPos + ' ' + clientY + 'px';
+            } else {
+                bgObj.style.backgroundPosition = xPos + ' ' + clientY + 'px';
             }
 
 
