@@ -1,5 +1,7 @@
 # ang2-parallax
 
+### Plugin forked for own development! Do not use if not sure it's fine for you :)
+
 ### What Am I?!
 An easy way to implement parallax scrolling for Angular2 components.  (There's also an [Angular 1.x](https://github.com/allenRoyston/ng-parallax "Angular 1.x") directive for those that need it.)
   - No dependencies
@@ -49,7 +51,7 @@ export class componentName { }
 ```
 
 ### Version
-1.0.3
+1.0.4
 
 
 ### Live Demo 
